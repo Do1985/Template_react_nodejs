@@ -16,3 +16,7 @@ app.use("/", router);
 app.listen(3001, () => {
     console.log("le serveur est demarré")
 })
+
+
+//cors: permet l'intermédiation entre la partie Back et la Partie Front.
+//body parser sécrise les paquets de données de l'envoi utilisateur.
