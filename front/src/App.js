@@ -4,13 +4,16 @@ import Home from "./components/Home";
 import Error404 from "./components/Error404";
 
 function App() {
-    <BrowserRouter>
-        <Nav />
-        <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="*" element={<Error404 />} />
-        </Routes>
-    </BrowserRouter>
+    return(
+        <BrowserRouter>
+            <Nav />
+            <Routes>
+                <Route path="/" element={<Home />} />
+                <Route path="*" element={<Error404 />} />
+            </Routes>
+        </BrowserRouter>
+    )
+    
 }
    
 
