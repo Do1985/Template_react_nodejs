@@ -20,18 +20,18 @@ const Nav = (props) => {
           </NavLink>
         </li>
         <li>
-          <NavLink to="/product/react">
-            profil
+          <NavLink to="/addArticle">
+            add Article
           </NavLink>
         </li>
         <li>
-          <NavLink to="/product/html">
-            profil
+          <NavLink to="/addUser">
+            add User
           </NavLink>
         </li>
         <li>
           <NavLink to="/testme">
-            profil
+            TEST
           </NavLink>
         </li>
       </ul>
