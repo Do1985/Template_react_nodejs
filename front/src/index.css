@@ -1,13 +1,197 @@
+@import url('https://fonts.googleapis.com/css2?family=Cardo&display=swap');
+
+
+ * {
+	box-sizing: border-box; /* La largeur (width) comprend le padding et la bordure */
+}
+
+html {
+	font-size: 62.5%; 
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue','Cardo',
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New','Cardo',
     monospace;
+}
+
+
+/*@font-face {
+	font-family: "SpecialElite";
+	src: url(../fonts/SpecialElite.woff) format("woff");
+	font-weight: 400;
+	font-style: normal;
+}
+*/
+
+    
+
+body {
+  background-image: url('/public/img/back_biblio.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  text-align:center;
+  color: black;
+  font-size: x-large;
+}
+
+nav {
+	padding: 0; margin: 0;
+	text-align: center; 
+}
+nav .ulpremier li {
+	display: inline-block;
+	justify-content: space-between;
+	list-style: none;
+  background-image: url('../public/img/back_biblio_6.jpg');
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  margin:1.7em ;
+  padding: 2em;
+  font-size:2rem;
+  border: 2px solid rgba(0,0,0, 0.2);
+  border-radius: 0.9em;
+}
+
+nav .uldeuxieme li {
+  	background-image: url(../public/img/old_vierge.jpg);
+  	background-repeat: no-repeat;
+  	background-size: 24% auto;
+  	border-radius: 0.4em;
+display:table-row ;
+
+padding: 5em;
+border: 2em;
+font-family: 'Cardo';
+}
+  	
+
+
+   main{
+  font-family: 'Cardo';
+  color: deepskyblue;
+  text-align: justify;
+  padding: 2em;
+  margin-left: 2em; /* On centre le contenu */
+	margin-right: 1em;
+}
+
+h1{
+  background-image:url(../public/img/biblio_paysage.png);
+  background-size:70%;
+}
+
+.proclus {
+  float: left;
+}
+
+.proclustext {
+  font-family: 'Cardo';
+  color: #402cb2;
+}
+
+.login , .register {
+  vertical-align: top;
+}
+
+
+/* formulaire de addArticle  */
+
+.article-form {
+  display: flex;
+  flex-direction: column;
+  max-width: 575px;
+  margin: 0 auto;
+}
+
+label {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+input,
+textarea {
+  padding: 10px;
+  border-radius: 7px;
+  border: none;
+  margin-bottom: 30px;
+  font-size: 1rem;
+}
+
+input {
+  height: 30px;
+}
+
+textarea {
+  height: 180px;
+}
+
+button[type="submit"] {
+  background-color: #C19A6B;
+  color: #fff;
+  border: none;
+  border-radius: 7px;
+  padding: 10px 20px;
+  font-size: 1.4rem;
+  cursor: pointer;
+  transition: background-color 0.5s ease;
+}
+
+button[type="submit"]:hover {
+  background-color: #C19A6B;
+}
+
+/* fin formulaire de addArticle  */
+.allproducts {
+  background-color: #C19A6B;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 10px;
+  border-radius: 4px;
+  font-family: 'Palatino Linotype', serif;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.25);
+}
+
+
+
+
+
+
+button:hover {
+  background-color: #C19A6B;
+}
+
+button:active {
+  box-shadow: none;
+}
+
+/*page Plotin */
+
+.plotin {
+  float: left;
+}
+
+.porphyre {
+  float: right;
+}
+.enneades {
+  float: left;
+}
+
+/* page Auteurs */
+.lien_auteurs{
+  
 }

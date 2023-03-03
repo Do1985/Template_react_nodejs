@@ -19,10 +19,10 @@ const protectedPath = (pathname) => {
 const accesAutorized = (pathname, userData) => {
     const typePath = protectedPath(pathname)
     
-    // etre admin et accede a une route admin
+    // etre admin et accès a une route admin
     const adminAcess = userData && userData.admin ? typePath === ADMIN : false
     
-    // etre connecter et accede a une route user
+    // etre connecté et accès a une route user
     const userAcess = userData && userData.user ? typePath === USER : false
     
     // route public
@@ -34,7 +34,7 @@ const accesAutorized = (pathname, userData) => {
 
 
 export default async(req, res, next) => {
-    // recupere la route a la quel on souhaite acceder
+    // recupere la route à laquelle on souhaite acceder
     const pathname = parseurl(req).pathname.split('/')[1];
     
     console.log(pathname)
@@ -48,10 +48,10 @@ export default async(req, res, next) => {
     try{
         // ton verrifie le token
         const userData = await verifyToken(token)
-        // on verrifie si la route est autoriser
+        // on verrifie si la route est autorisée
         const acces = accesAutorized(pathname,userData)
-        // la reponse dans le cas ou la route n'est pas autoriser
-        const response = {response:false, msg:'acces refuser'}
+        // la reponse dans le cas ou la route n'est pas autorisée
+        const response = {response:false, msg:'accès refusé, c est une soirée privée, circulez.' }
         
         return acces ? next() : res.json(response)
     }catch(err) {
