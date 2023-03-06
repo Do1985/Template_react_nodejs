@@ -59,10 +59,13 @@ const Profil = () => {
         </div>  
         
         <div>
-                 <button><NavLink to="/Profil/Logout">DECONNEXION
+                 <button>
+                 <NavLink to="/Logout">
+                 DECONNEXION
                     <img src="../img/logout.jpg" alt="Se déconnecter" width="163" height="100"/>
                     
-                    </NavLink></button> 
+                    </NavLink>
+                    </button> 
                   </div>  
                   </Fragment>
     )

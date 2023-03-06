@@ -9,7 +9,7 @@ const Home = () => {
     <h1>Jean Pic de la MIRANDOLE:</h1>
     <h2>  une vie de synthèse philosophiquo-céleste </h2>
     
-    <img src="../img/florence.png" alt="Forence_la_ville"></img>
+    <img className="florence"src="../img/florence.png" alt="Forence_la_ville"></img>
     
   <main>  
    <p> Giovanni Pico della Mirandola (1463-1494) était un philosophe, théologien et humaniste italien de la Renaissance. Sa vie et son travail ont eu une grande influence sur le développement de la philosophie de la Renaissance et de la pensée humaniste.

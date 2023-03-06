@@ -46,22 +46,19 @@ const AllArticles = () => {
               <Fragment>
                 <button onClick={() => deleteArticle(item.id)}> X </button>
                 <Link to={`/editArticle/${item.id}`}><button>EDITER</button></Link>
-             
-             
-             
-                 <button><NavLink to="/AllArticles/AddArticle">AJOUTER UN ARTICLE
-                    <img src="../img/back_biblio.jpg" alt="Ajouter un article" width="163" height="100"/>
-                    </NavLink></button>
-              
-                    
-                    
               </Fragment>
             }
             </div>
           )
         })}
-      
-      
+        <div>
+          <button>
+            <NavLink to="/AddArticle">
+              AJOUTER UN ARTICLE
+              <img src="../img/back_biblio.jpg" alt="Ajouter un article" width="163" height="100"/>
+            </NavLink>
+          </button>
+        </div>
     </div>
   )
 }

@@ -36,6 +36,8 @@ import getProductByIdController from "../controllers/getProductByIdController.js
 import getArticleDetailController from "../controllers/getArticleDetailController.js";
 import getArticleDetailByIdController from "../controllers/getArticleDetailByIdController.js";
 import allProductsController from "../controllers/allProductsController.js";
+import checkToken from '../controllers/checkToken.js'
+
 
 /*import middleWareUploadFile from '..controllers/middleWareUploadFile.js'
 import testUpload from '../controllers/testUpload.js';*/
@@ -86,6 +88,8 @@ router.post("/stockUploadFile", middlewareUploadFile, stockUploadFile);
 router.post("/deleteProduct", deleteProduct)
 router.post("/editProduct", editProduct)
 router.post("/getProductById", getProductByIdController)
+
+router.get("/relogged", checkToken)
 /*router.post("/middleWareUploadFile", middleWareUploadFile)
 router.post("/testUpload", testUpload)*/
 

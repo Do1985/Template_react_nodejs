@@ -1,6 +1,6 @@
 import axios from "axios"
 import {BASE_URL} from '../tools/constante.js'
-import {useEffect, useState} from "react"
+import {useEffect, useState, Fragment} from "react"
 import {NavLink} from 'react-router-dom'
 
 const Users = () => {
@@ -20,19 +20,32 @@ const Users = () => {
         .catch(err => console.log(err))
     }
     
-    return(
-        <div>
-            {usersList.map((user,i) => {
-                return(
-                    <ul key={i}>
+    return (
+    <div>
+        {usersList.map((user,i) => {
+            return(
+                <Fragment key={i}>
+                    <ul>
                         <li>Nom:<NavLink to={`/user/${user.id}`}>{user.nom}</NavLink></li>
-                        <li>Prenom:{user.prenom}</li>
-                        <button onClick={() => deleteUser(user.id)}> X </button>
+                        <li>Prénom: {user.prenom}</li>
+                        <button onClick={() => deleteUser(user.id)}>X</button>
                     </ul>
-                )
-            })}
-        </div>    
-    )
+                </Fragment>
+            )
+        })}
+        <div>
+            <button>
+                <NavLink to="/Logout">
+                    DECONNEXION
+                    <img className="deco" src="../img/logout.jpg" alt="Se déconnecter" width="163" height="100"/>
+                </NavLink>
+            </button> 
+        </div>
+    </div>   
+);
+
+                  
+    
 }
 
 export default Users

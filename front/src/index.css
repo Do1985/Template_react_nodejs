@@ -2,8 +2,10 @@
 
 
  * {
-	box-sizing: border-box; /* La largeur (width) comprend le padding et la bordure */
-}
+	box-sizing: border-box;
+	/* La largeur (width) comprend le padding et la bordure */
+
+ }
 
 html {
 	font-size: 62.5%; 
@@ -75,28 +77,14 @@ font-family: 'Cardo';
   	
 
 
-   main{
-  font-family: 'Cardo';
-  color: deepskyblue;
-  text-align: justify;
-  padding: 2em;
-  margin-left: 2em; /* On centre le contenu */
-	margin-right: 1em;
-}
+ 
 
 h1{
   background-image:url(../public/img/biblio_paysage.png);
   background-size:70%;
 }
 
-.proclus {
-  float: left;
-}
 
-.proclustext {
-  font-family: 'Cardo';
-  color: #402cb2;
-}
 
 .login , .register {
   vertical-align: top;
@@ -150,6 +138,7 @@ button[type="submit"]:hover {
 }
 
 /* fin formulaire de addArticle  */
+
 .allproducts {
   background-color: #C19A6B;
   border: none;
@@ -178,7 +167,31 @@ button:active {
   box-shadow: none;
 }
 
+/* HEADER */
+
+
+
+/* HOME */
+
+  main{
+  font-family: 'Cardo';
+  color: deepskyblue;
+  text-align: justify;
+  padding: 2em;
+  margin-left: 2em; /* On centre le contenu */
+	margin-right: 1em;
+}
+
+.florence {
+  width: 40%;
+  float:right;
+}
+
 /*page Plotin */
+
+.container_plotin {
+  
+}
 
 .plotin {
   float: left;
@@ -192,6 +205,54 @@ button:active {
 }
 
 /* page Auteurs */
+.container_auteurs {
+  
+}
+
 .lien_auteurs{
+  
+}
+
+/* page PICO */
+
+.container_pico {
+  border-sizing: border-box;
+font-family: 'Cardo';
+}
+.image_pico {
+  
+}
+.image_pico_2 {
+  
+}
+.manuscrit {
+  
+}
+.les_sept {
+}
+.marcile {
+  
+}
+
+
+/* page PROCLUS */
+
+
+.container_proclus {
+  
+}
+
+.proclus {
+  float: left;
+}
+
+.proclustext {
+  font-family: 'Cardo';
+  color: #402cb2;
+}
+
+/* FICIN    */
+
+.container_ficin {
   
 }

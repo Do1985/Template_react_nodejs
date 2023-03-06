@@ -4,11 +4,7 @@ import Nav from './Nav.jsx'
 const Header = () => {
     return (
         <Fragment>
-            
-            <link rel="preconnect" href="https://fonts.googleapis.com"></link>
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin></link>
-<link href="https://fonts.googleapis.com/css2?family=Cardo&display=swap" rel="stylesheet"></link>
-
+     
 
  <div className="header">
                     <div className="Jo">

@@ -51,10 +51,14 @@ const AddProduct = () => {
           <input type="text" placeholder="prix" name="prix" onChange={handleChange} value={filesData.prix} />
           <input type="text" placeholder="stock" name="stock" onChange={handleChange} value={filesData.stock} />
         </label>
-        <input type="submit" />
+        <button type="button" onClick={() => console.log("Bouton cliqué!")}>
+  SOUMETTRE
+</button>
       </form>
     </Fragment>
   );
 };
 
 export default AddProduct;
+
+
